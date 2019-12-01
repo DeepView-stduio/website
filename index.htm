@@ -1,0 +1,335 @@
+
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <link rel="shortcut icon" type="image/x-icon" href="Scripts/img/favicon.ico" media="screen" />
+    <meta charset=utf-8"utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta name="keywords" content="人脸识别SDK,免费人脸识别,人脸识别开放源代码,免费人脸识别服务,人脸防伪,人脸比对,免费的人脸识别SDK,人脸识别算法,人脸识别网站,人脸识别技术,脸部识别技术,人脸识别软件,人脸识别系统,人像识别,生物识别，公安人脸识别软件,火车站人脸识别系统,大规模照片搜索比对,人脸识别考勤机,人脸识别门禁机,人脸手持机,智能楼宇,标准化信息采集室人像采集识别,娱乐服务场所治安管理信息系统,公安系统">
+    <meta name="description" content="北京千搜科技有限公司是一家集科研，开发，生产，销售，服务为一体的专业化的身份识别解决方案提供商，专注于人脸识别和智能视频分析等核心尖端技术，是一家真正拥有核心自主研发算法的企业。公司目前具有业界领先的人脸识别技术的全套解决方案，其中人脸识别和人脸防伪已具备国际级水平。技术团体在人脸市场有着多年传统项目的运作经验，曾参与过多个重大生物特征识别方面的项目。基于现有的技术资源优势，公司开发了集成人脸检测，人脸分析（微笑，性别，年龄，表情，种族），人脸识别等核心算法的智能人脸云平台，依托该平台的基础服务，现已研发出基于人脸进行识别的身份认证登录系统。通过长期的人脸技术应用解决方案的探索，公司致力于开发互联网人脸产品的全新应用，意图打造更便捷更安全的账户登录生态系统和更加值得信赖的移动支付安全体验。">
+    <meta name="author" content=""/>
+    <META HTTP-EQUIV="pragma" CONTENT="no-cache">
+    <META HTTP-EQUIV="Cache-Control" CONTENT="no-cache, must-revalidate">
+    <META HTTP-EQUIV="expires" CONTENT="0">
+    <title>广东工业大学CV&OA</title>
+    <!-- BOOTSTRAP CORE STYLE CSS -->
+    <link href="Content/bootstrap.css" rel="stylesheet" />
+    <!-- FONT AWESOME CSS -->
+    <link href="Content/font-awesome.min.css"  rel="stylesheet" />
+    <!-- FLEXSLIDER CSS -->
+    <link href="Content/flexslider.css" rel="stylesheet" />
+    <!-- CUSTOM STYLE CSS -->
+    <link href="Content/style.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top " id="menu">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" id="collapse" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#"><img class="logo-custom" src="Scripts/img/qiansou.png"  alt="" /></a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse move-me">
+                <ul class="nav navbar-nav navbar-left">
+                    <li><a>不要脸</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#home">首页</a></li>
+                    <li>
+                        <a href="#features-sec">软件下载</a>
+                    </li>
+                    <li><a href="#faculty-sec" style="">在线演示</a></li>
+                    <li><a href="#contact-sec">关于我们</a></li>
+                    <li><a target="_blank" href="javascript:if(confirm('此操作将会离开本页面,确定继续？'))window.location='bigface/bigface.html'" >在线体验</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+    <!--NAVBAR SECTION END-->
+    <div class="home-sec" id="home">
+        <div class="overlay" style="padding-top: 70px">
+            <img src="Scripts/img/bg.png"  style="width: 100%" />
+            
+        </div>
+    </div>
+    <!--HOME SECTION END-->
+    <div class="tag-line">
+        <div class="container">
+            <div class="row  text-center">
+                <div class="col-lg-12  col-md-12 col-sm-12">
+                    <h2 data-scroll-reveal="enter from the bottom after 0.1s">
+                        <i class="fa fa-circle-o-notch"></i>千搜科技，让生活更便捷，让世界更安全 <i class="fa fa-circle-o-notch"></i>
+                    </h2>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--HOME SECTION TAG LINE END-->
+    <div id="features-sec" class="container set-pad">
+        <div class="row text-center">
+            <div class="col-lg-8 col-lg-offset-2 col-md-8 col-sm-8 col-md-offset-2 col-sm-offset-2">
+                <h1 data-scroll-reveal="enter from the bottom after 0.2s" class="header-line">产品与服务 </h1>
+                <p data-scroll-reveal="enter from the bottom after 0.3s">
+                    人脸对比、黑白名单识别、人脸跟踪、年龄性别识别
+                </p>
+            </div>
+        </div>
+        <!--/.HEADER LINE END-->
+        <div class="row">
+            
+            <div class="col-lg-4  col-md-4  col-sm-4 col-xs-12" data-scroll-reveal="enter from the bottom after 0.5s">
+                <div class="about-div">
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-5 col-md-push-0 col-sm-push-0 col-xs-push-7">
+                            <div class="icon-round-border" style="background-image: url(Scripts/img/lixiansdk.png)" onclick="OnProudetClick('lixiansdk')"></div>
+                        </div>
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-7 col-md-pull-0 col-sm-pull-0 col-xs-pull-5">
+                            <p>
+                                <span class="hidden-lg hidden-md hidden-sm">离线SDK<br /></span>
+                                人脸识别、人脸跟踪、移动物体检测、活体检测 、年龄性别识别
+                            </p>
+                            <a id="lixiansdk" href="home/facesdk.html"  class="btn btn-info btn-set hidden-xs">SDK下载</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4  col-md-4  col-sm-4 col-xs-12" data-scroll-reveal="enter from the bottom after 0.6s">
+                <div class="about-div">
+                    <div class="row">
+                        <div class="col-md-12 col-sm-12 col-xs-5">
+                            <div class="icon-round-border" style="background-image: url(Scripts/img/chanpin.png)" onclick="OnProudetClick('chanpinfuwu')"></div>
+                        </div>
+                        <div class="col-md-12 col-sm-12 col-xs-7">
+                            <p>
+                                <span class="hidden-lg hidden-md hidden-sm">产品服务<br /></span>
+                                考勤系统、动态黑白名单识别系统、二代证核验系统、人脸识别闸机等
+                            </p>
+                            <a href="home/productinfo.html"  id="chanpinfuwu" class="btn btn-info btn-set hidden-xs">产品下载</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4  col-md-4 col-sm-4 col-xs-12" data-scroll-reveal="enter from the bottom after 0.6s">
+                <div class="about-div">
+                    <div class="row">
+                        <div class="col-md-12 col-sm-12 col-xs-5  col-md-push-0 col-sm-push-0 col-xs-push-7 ">
+                            <div class="icon-round-border" style="background-image: url(Scripts/img/dingzhi.png)" onclick="OnProudetClick('dingzhihua')"></div>
+                        </div>
+                        <div class="col-md-12 col-sm-12 col-xs-7 col-md-pull-0 col-sm-pull-0 col-xs-pull-5">
+                            <p>
+                                <span class="hidden-lg hidden-md hidden-sm">定制化服务<br /></span>
+                                根据您的特殊需求，我们为您提供独一无二的SDK定制化服务
+                            </p>
+                            <a href="home/facevip.html" id="dingzhihua" class="btn btn-info btn-set hidden-xs">定制化服务</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- FEATURES SECTION END-->
+    <div id="faculty-sec" style="display:block">
+        <div class="overlay">
+            <div class="container set-pad set-pad-test">
+                <div class="row text-center">
+                    <div class="col-lg-8 col-lg-offset-2 col-md-8 col-sm-8 col-md-offset-2 col-sm-offset-2" data-scroll-reveal="nter from the bottom after 0.6s">
+                        <h1 data-scroll-reveal="enter from the bottom after 0.1s" class="header-line">人脸对比身份核验</h1>
+                        <p data-scroll-reveal="enter from the bottom after 0.3s">
+                            身份核验系统第五代人脸识别算法，可以与十年以上的证件照进行人脸对比核验
+                        </p>
+                    </div>
+                </div>
+                <!--/.HEADER LINE END-->
+                <div class="row">
+                    <div class="col-lg-5 col-md-5 col-sm-6 col-xs-6 col-lg-offset-1 col-md-offset-1" data-scroll-reveal="nter from the bottom after 0.6s">
+                        <div class="faculty-div">
+                            <img id="pic1" src="Scripts/img/xuanze.jpg"  onclick="pic1Click()" />
+                            <input type="file" value="上传" id="file1" onchange="change('pic1', this)" style="display: none" />
+                        </div>
+                    </div>
+                    <div class="col-lg-5  col-md-5 col-sm-5 col-xs-6 " data-scroll-reveal="nter from the bottom after 0.6s">
+                        <div class="faculty-div">
+                            <img src="Scripts/img/xuanze.jpg"  id="pic2" onclick="pic2Click()" />
+                            <input type="file" value="上传" id="file2" onchange="change('pic2', this)" style="display: none" />
+                        </div>
+                    </div>
+                    <div class="col-lg-10  col-md-10 col-sm-11 col-xs-12  col-lg-offset-1 col-md-offset-1 col-sm-offset-1" data-scroll-reveal="nter from the bottom after 0.6s">
+                        <div class="input-group faculty-div">
+                            <span class="input-group-btn">
+                                <button class="btn btn-primary btn-group-lg" onclick="javascript: face2face();" type="button"> 点 击 对 比 </button>
+                            </span>
+                            <input type="text" class="form-control" readonly="readonly" placeholder="结果" style="background-color: #000000; color: #00ff00" id="face2faceValue" aria-describedby="sizing-addon1">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="contact-sex"  style="display:none">
+        <div class="container set-pad set-pad-test">
+            <div class="row text-center">
+                <div class="col-lg-8 col-lg-offset-2 col-md-8 col-sm-8 col-md-offset-2 col-sm-offset-2" data-scroll-reveal="nter from the bottom after 0.6s">
+                    <h1 class="header-line">年龄性别识别 </h1>
+                    <p>
+                        年龄性别识别可精准的预测人脸年龄与性别，针对老人与儿童也有良好的适应性
+                    </p>
+                </div>
+            </div>
+            <!--/.HEADER LINE END-->
+            <div class="row" data-scroll-reveal="nter from the bottom after 0.6s">
+                <div class="col-lg-5 col-md-5 col-sm-6 col-xs-6 col-lg-offset-1 col-md-offset-1">
+                    <div class="faculty-div">
+                        <img src="Scripts/img/xuanze.jpg"  id="faceage_pic" onclick="faceage_fileClick()" class="contact-sex-img" />
+                        <input type="file" value="上传" id="faceage_file" onchange="faceagechange('faceage_pic',this)" style="display: none" />
+                    </div>
+                </div>
+                <div class="col-lg-5  col-md-5 col-sm-6 col-xs-6 text-left">
+                    <div class="faculty-div">
+                        <textarea class="form-control faculty-div-textarea" readonly="readonly" style="background-color: #000000; color: #00ff00;" id="txt_faceage">></textarea>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="contact-point"  style="display:none">
+        <div class="overlay">
+            <div class="container set-pad set-pad-test" data-scroll-reveal="nter from the bottom after 0.6s">
+                <div class="row text-center">
+                    <div class="col-lg-8 col-lg-offset-2 col-md-8 col-sm-8 col-md-offset-2 col-sm-offset-2">
+                        <h1 class="header-line">人脸姿态检测 </h1>
+                        <p>
+                            人脸姿态检测算法返回人脸位置和人脸角度
+                        </p>
+                    </div>
+                </div>
+                <!--/.HEADER LINE END-->
+                <div class="row" data-scroll-reveal="nter from the bottom after 0.6s">
+                    <div class="col-lg-5 col-md-5 col-sm-6 col-xs-6 col-lg-offset-1 col-md-offset-1 ">
+                        <div class="faculty-div">
+                            <img src="Scripts/img/xuanze.jpg"  id="facepint_pic" onclick="facepint_fileClick()" />
+                            <input type="file" value="上传" id="facepint_file" onchange="facepintchange('facepint_pic',this)" style="display: none" />
+                        </div>
+                    </div>
+                    <div class="col-lg-5  col-md-5 col-sm-6 col-xs-6 text-left">
+                        <div class="faculty-div">
+                            <textarea class="form-control" style="background-color: #000000; color: #00ff00;" readonly="readonly" id="txt_facepoint">></textarea>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- COURSES SECTION END-->
+    <div id="contact-sec">
+        <div class="overlay">
+            <div class="container set-pad">
+                <div class="row text-center">
+                    <div class="col-lg-8 col-lg-offset-2 col-md-8 col-sm-8 col-md-offset-2 col-sm-offset-2">
+                        <h1 data-scroll-reveal="enter from the bottom after 0.1s" class="header-line" style="color: black">关于我们</h1>
+                    </div>
+                </div>
+                <!--/.HEADER LINE END-->
+                <div class="row set-row-pad" data-scroll-reveal="enter from the bottom after 0.5s">
+                    <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 " style="text-indent: 25px; color: black; font-size: 15px;line-height:35px">
+                        <p>
+                            北京千搜科技有限公司，坐落于被称为“中国硅谷”的中关村软件产业园区，是一家专业从事人脸识别和智能视频分析的高科技公司。公司核心团队由中国科学院自动化研究所和清华大学毕业的科研人员组成，与中国科学院多个科研院所合作进行产品升级改造。2014 年千搜科技加入由中国科学院自动化研究所发起成立的生物识别产业技术创新战略联盟，成为联盟会员单位。2017年千搜科技入驻天津中科智能识别产业技术研究院，正式踏上智能识别产业化道路。<br />
+                        </p>
+                        <p>千搜科技核心技术团队专注于研发人脸识别系统，通过融合机器学习、大数据挖掘及3D图形处理技术，致力于将算法新、性能好、使用方便的人脸识别技术和视频分析处理技术提供给广大的开发者和集成商。我们通过向广大用户提供云端API、离线SDK、行业通用产品以及符合用户特殊需求的定制化产品服务，将人脸识别技术广泛应用到互联网身份认证及智能安防中。</p>
+                        <p>千搜科技，让生活更便捷，让世界更安全！</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div style="background-color: #2d3d5a; color: #fff;font-size: 15px;background-attachment: fixed;">
+        <div class="container">
+            <div class="row set-row-pad" style="padding-bottom: 30px">
+                <div class="col-lg-6 col-md-6 col-sm-6   col-lg-offset-1 col-md-offset-1 col-sm-offset-1 " data-scroll-reveal="enter from the bottom after 0.4s">
+                    <h2><strong>联系方式</strong></h2>
+                    <hr />
+                    <div style="line-height: 30px">
+                        <h4><strong>地址:</strong> 北京市海淀区中关村中国科学院软件园区 </h4>
+                        <h4><strong>商务合作: </strong>18001319258</h4>
+                        <h4><strong>Email: </strong>service@qiansou.cn</h4>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4   col-lg-offset-1 col-md-offset-1 col-sm-offset-1" data-scroll-reveal="enter from the bottom after 0.4s" style="vertical-align: bottom">
+                    <h2>
+                        <strong>扫我有惊喜 关注送系统</strong>
+                    </h2>
+                    <hr />
+                    <div>
+                        <a href="#"> <img width="100" height="100" src="Scripts/img/gongzhonghao.jpg"  alt="" style="border-radius: 5px" /> </a>
+                        <a href="#"> <img width="100" height="100" src="Scripts/img/qun.png"  alt="" style="margin-left: 10px;border-radius: 5px" /></a>
+                    </div>
+                </div>
+                <div class="col-lg-11 col-md-11 col-sm-11 col-lg-offset-1 col-md-offset-1 col-sm-offset-1" data-scroll-reveal="enter from the bottom after 0.4s" style="padding-top:15px">
+                    &copy 2019 www.qiansou.cn |北京千搜科技有限公司 Corporation  京ICP备14016321号
+                </div>
+				 <div style="width:300px;margin:0 auto; padding:20px 0;">
+						<a target="_blank" href="javascript:if(confirm('http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11010802029070  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ����һ������·���ⲿ������Ϊ������ʼ��ַ�ĵ�ַ��  \n\n�����ڷ������ϴ�����?'))window.location='http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11010802029070'"  style="display:inline-block;text-decoration:none;height:20px;line-height:20px;"><img src="" style="float:left;"/><p style="float:left;height:20px;line-height:20px;margin: 0px 0px 0px 5px; color:#939393;">京公网安备 11010802029070号</p></a>
+					  </div>
+            </div>
+        </div>
+    </div>
+    <!-- FOOTER SECTION END-->
+    <!--  Jquery Core Script -->
+    <script src="Scripts/jquery-1.10.2.js" ></script>
+    <!--  Core Bootstrap Script -->
+    <script src="Scripts/bootstrap.js"></script>
+    <!--  Flexslider Scripts -->
+    <script src="Scripts/jquery.flexslider.js" ></script>
+    <!--  Scrolling Reveal Script -->
+    <script src="Scripts/scrollReveal.js"></script>
+    <!--  Scroll Scripts -->
+    <script src="Scripts/jquery.easing.min.js"></script>
+    <!--  Custom Scripts -->
+    <script src="Scripts/custom.js"></script>
+
+    <script src="Scripts/uploadImage.js"></script>
+
+    <script src="Scripts/jpeg_encoder_basic.js"></script>
+
+    <script src="Scripts/exif.js"></script>
+
+    <!--  Index Scripts -->
+    <script src="Scripts/qiansou.js"></script>
+    <script>
+        $(".nav > li > a").click(function () {
+            $('#collapse').addClass("collapsed");
+            $("#navbar").removeClass("in");
+            $("#navbar").addClass("collapse");
+        });
+
+        function OnProudetClick(name) {
+            switch (name) {
+                case "zaixianapi":
+                    self.location = "faceapi/faceapi.html"/*tpa=http://qiansou.cn/faceapi/faceapi.html*/;
+                    break;
+                case "lixiansdk":
+                    self.location = "home/facesdk.html"/*tpa=http://qiansou.cn/home/facesdk.html*/;
+                    break;
+                case "chanpinfuwu":
+                    self.location = "home/productinfo.html"/*tpa=http://qiansou.cn/home/productinfo.html*/;
+                    break;
+                case "dingzhihua":
+                    self.location = "home/facevip.html"/*tpa=http://qiansou.cn/home/facevip.html*/;
+                default:
+            }
+        }
+
+        var _hmt = _hmt || [];
+        (function () {
+            var hm = document.createElement("script");
+            hm.src = "../hm.baidu.com/hm.js-c1ae751a2a9976f7fd72ff9fe6d3c694"/*tpa=https://hm.baidu.com/hm.js?c1ae751a2a9976f7fd72ff9fe6d3c694*/;
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+</body>
+</html>
