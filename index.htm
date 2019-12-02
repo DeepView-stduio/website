@@ -1,0 +1,337 @@
+
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <link rel="shortcut icon" type="image/x-icon" href="Scripts/img/favicon.ico" media="screen" />
+    <meta charset=utf-8"utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta name="keywords" content="DeepCode工作室，依托广东工业大学应用数学学院实验中心，吸取广东工业大学计算机学院TopView工作室的创办经验及运行流程所创办的高技术水平在校工作室。工作室核心团队由广东工业大学应用数学学院及管理学院学生组成，并有计算机学院工作室成员及教授研究团队成员协助创办并参与。">
+    <meta name="description" content="DeepCode工作室致力于将前端开发、后端开发、移动开发、算法程序设计、机器学习、深度学习、数据分析、云计算、大数据、运维测试、数据库等融合打造一站式行业解决方案。为更多的开发者开源用于学习、研究的优质代码，提升开发能力与项目经验，在青葱岁月中伴随热情与汗水成长。">
+    <meta name="author" content=""/>
+    <META HTTP-EQUIV="pragma" CONTENT="no-cache">
+    <META HTTP-EQUIV="Cache-Control" CONTENT="no-cache, must-revalidate">
+    <META HTTP-EQUIV="expires" CONTENT="0">
+    <title>DEEPCODE工作室</title>
+    <!-- BOOTSTRAP CORE STYLE CSS -->
+    <link href="Content/bootstrap.css" rel="stylesheet" />
+    <!-- FONT AWESOME CSS -->
+    <link href="Content/font-awesome.min.css"  rel="stylesheet" />
+    <!-- FLEXSLIDER CSS -->
+    <link href="Content/flexslider.css" rel="stylesheet" />
+    <!-- CUSTOM STYLE CSS -->
+    <link href="Content/style.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top " id="menu">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" id="collapse" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#"><img class="logo-custom" src="Scripts/img/qiansou.png"  alt="" /></a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse move-me">
+                <ul class="nav navbar-nav navbar-left">
+                    <li><a></a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#home">首页</a></li>
+                    <li>
+                        <a href="#features-sec">软件下载</a>
+                    </li>
+                    <li><a href="#faculty-sec" style="">在线演示</a></li>
+                    <li><a href="#contact-sec">关于我们</a></li>
+                    <li><a target="_blank" href="javascript:if(confirm('此操作将会离开本页面,确定继续？'))window.location='bigface/bigface.html'" >在线体验</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+    <!--NAVBAR SECTION END-->
+    <div class="home-sec" id="home">
+        <div class="overlay" style="padding-top: 70px">
+            <img src="Scripts/img/bg.png"  style="width: 100%" />
+            
+        </div>
+    </div>
+    <!--HOME SECTION END-->
+    <div class="tag-line">
+        <div class="container">
+            <div class="row  text-center">
+                <div class="col-lg-12  col-md-12 col-sm-12">
+                    <h2 data-scroll-reveal="enter from the bottom after 0.1s">
+                        <i class="fa fa-circle-o-notch"></i>DeepCode，凝望深渊！ <i class="fa fa-circle-o-notch"></i>
+                    </h2>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--HOME SECTION TAG LINE END-->
+    <div id="features-sec" class="container set-pad">
+        <div class="row text-center">
+            <div class="col-lg-8 col-lg-offset-2 col-md-8 col-sm-8 col-md-offset-2 col-sm-offset-2">
+                <h1 data-scroll-reveal="enter from the bottom after 0.2s" class="header-line">产品与服务 </h1>
+                <p data-scroll-reveal="enter from the bottom after 0.3s">
+                    人脸对比、黑白名单识别、人脸跟踪、年龄性别识别
+                </p>
+            </div>
+        </div>
+        <!--/.HEADER LINE END-->
+        <div class="row">
+            
+            <div class="col-lg-4  col-md-4  col-sm-4 col-xs-12" data-scroll-reveal="enter from the bottom after 0.5s">
+                <div class="about-div">
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-5 col-md-push-0 col-sm-push-0 col-xs-push-7">
+                            <div class="icon-round-border" style="background-image: url(Scripts/img/lixiansdk.png)" onclick="OnProudetClick('lixiansdk')"></div>
+                        </div>
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-7 col-md-pull-0 col-sm-pull-0 col-xs-pull-5">
+                            <p>
+                                <span class="hidden-lg hidden-md hidden-sm">开发者工具<br /></span>
+                                IDLE、Browser、Tool、SDK、 SoftWare......
+                            </p>
+                            <a id="lixiansdk" href="home/facesdk.html"  class="btn btn-info btn-set hidden-xs">开发者工具</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4  col-md-4  col-sm-4 col-xs-12" data-scroll-reveal="enter from the bottom after 0.6s">
+                <div class="about-div">
+                    <div class="row">
+                        <div class="col-md-12 col-sm-12 col-xs-5">
+                            <div class="icon-round-border" style="background-image: url(Scripts/img/chanpin.png)" onclick="OnProudetClick('chanpinfuwu')"></div>
+                        </div>
+                        <div class="col-md-12 col-sm-12 col-xs-7">
+                            <p>
+                                <span class="hidden-lg hidden-md hidden-sm">产品服务<br /></span>
+                                人物动漫化、风格迁移、人类检测、人体姿态估计、群智能优化算法工具箱......
+                            </p>
+                            <a href="home/productinfo.html"  id="chanpinfuwu" class="btn btn-info btn-set hidden-xs">产品下载</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4  col-md-4 col-sm-4 col-xs-12" data-scroll-reveal="enter from the bottom after 0.6s">
+                <div class="about-div">
+                    <div class="row">
+                        <div class="col-md-12 col-sm-12 col-xs-5  col-md-push-0 col-sm-push-0 col-xs-push-7 ">
+                            <div class="icon-round-border" style="background-image: url(Scripts/img/dingzhi.png)" onclick="OnProudetClick('dingzhihua')"></div>
+                        </div>
+                        <div class="col-md-12 col-sm-12 col-xs-7 col-md-pull-0 col-sm-pull-0 col-xs-pull-5">
+                            <p>
+                                <span class="hidden-lg hidden-md hidden-sm">定制化开发<br /></span>
+                                根据您的业务需求，我们为您提供定制化网页、小程序、APP一站式开发......
+                            </p>
+                            <a href="home/facevip.html" id="dingzhihua" class="btn btn-info btn-set hidden-xs">定制化服务</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- FEATURES SECTION END-->
+    <div id="faculty-sec" style="display:block">
+        <div class="overlay">
+            <div class="container set-pad set-pad-test">
+                <div class="row text-center">
+                    <div class="col-lg-8 col-lg-offset-2 col-md-8 col-sm-8 col-md-offset-2 col-sm-offset-2" data-scroll-reveal="nter from the bottom after 0.6s">
+                        <h1 data-scroll-reveal="enter from the bottom after 0.1s" class="header-line">人脸对比身份核验</h1>
+                        <p data-scroll-reveal="enter from the bottom after 0.3s">
+                            身份核验系统第五代人脸识别算法，可以与十年以上的证件照进行人脸对比核验
+                        </p>
+                    </div>
+                </div>
+                <!--/.HEADER LINE END-->
+                <div class="row">
+                    <div class="col-lg-5 col-md-5 col-sm-6 col-xs-6 col-lg-offset-1 col-md-offset-1" data-scroll-reveal="nter from the bottom after 0.6s">
+                        <div class="faculty-div">
+                            <img id="pic1" src="Scripts/img/xuanze.jpg"  onclick="pic1Click()" />
+                            <input type="file" value="上传" id="file1" onchange="change('pic1', this)" style="display: none" />
+                        </div>
+                    </div>
+                    <div class="col-lg-5  col-md-5 col-sm-5 col-xs-6 " data-scroll-reveal="nter from the bottom after 0.6s">
+                        <div class="faculty-div">
+                            <img src="Scripts/img/xuanze.jpg"  id="pic2" onclick="pic2Click()" />
+                            <input type="file" value="上传" id="file2" onchange="change('pic2', this)" style="display: none" />
+                        </div>
+                    </div>
+                    <div class="col-lg-10  col-md-10 col-sm-11 col-xs-12  col-lg-offset-1 col-md-offset-1 col-sm-offset-1" data-scroll-reveal="nter from the bottom after 0.6s">
+                        <div class="input-group faculty-div">
+                            <span class="input-group-btn">
+                                <button class="btn btn-primary btn-group-lg" onclick="javascript: face2face();" type="button"> 点 击 对 比 </button>
+                            </span>
+                            <input type="text" class="form-control" readonly="readonly" placeholder="结果" style="background-color: #000000; color: #00ff00" id="face2faceValue" aria-describedby="sizing-addon1">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="contact-sex"  style="display:none">
+        <div class="container set-pad set-pad-test">
+            <div class="row text-center">
+                <div class="col-lg-8 col-lg-offset-2 col-md-8 col-sm-8 col-md-offset-2 col-sm-offset-2" data-scroll-reveal="nter from the bottom after 0.6s">
+                    <h1 class="header-line">年龄性别识别 </h1>
+                    <p>
+                        年龄性别识别可精准的预测人脸年龄与性别，针对老人与儿童也有良好的适应性
+                    </p>
+                </div>
+            </div>
+            <!--/.HEADER LINE END-->
+            <div class="row" data-scroll-reveal="nter from the bottom after 0.6s">
+                <div class="col-lg-5 col-md-5 col-sm-6 col-xs-6 col-lg-offset-1 col-md-offset-1">
+                    <div class="faculty-div">
+                        <img src="Scripts/img/xuanze.jpg"  id="faceage_pic" onclick="faceage_fileClick()" class="contact-sex-img" />
+                        <input type="file" value="上传" id="faceage_file" onchange="faceagechange('faceage_pic',this)" style="display: none" />
+                    </div>
+                </div>
+                <div class="col-lg-5  col-md-5 col-sm-6 col-xs-6 text-left">
+                    <div class="faculty-div">
+                        <textarea class="form-control faculty-div-textarea" readonly="readonly" style="background-color: #000000; color: #00ff00;" id="txt_faceage">></textarea>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="contact-point"  style="display:none">
+        <div class="overlay">
+            <div class="container set-pad set-pad-test" data-scroll-reveal="nter from the bottom after 0.6s">
+                <div class="row text-center">
+                    <div class="col-lg-8 col-lg-offset-2 col-md-8 col-sm-8 col-md-offset-2 col-sm-offset-2">
+                        <h1 class="header-line">人脸姿态检测 </h1>
+                        <p>
+                            人脸姿态检测算法返回人脸位置和人脸角度
+                        </p>
+                    </div>
+                </div>
+                <!--/.HEADER LINE END-->
+                <div class="row" data-scroll-reveal="nter from the bottom after 0.6s">
+                    <div class="col-lg-5 col-md-5 col-sm-6 col-xs-6 col-lg-offset-1 col-md-offset-1 ">
+                        <div class="faculty-div">
+                            <img src="Scripts/img/xuanze.jpg"  id="facepint_pic" onclick="facepint_fileClick()" />
+                            <input type="file" value="上传" id="facepint_file" onchange="facepintchange('facepint_pic',this)" style="display: none" />
+                        </div>
+                    </div>
+                    <div class="col-lg-5  col-md-5 col-sm-6 col-xs-6 text-left">
+                        <div class="faculty-div">
+                            <textarea class="form-control" style="background-color: #000000; color: #00ff00;" readonly="readonly" id="txt_facepoint">></textarea>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- COURSES SECTION END-->
+    <div id="contact-sec">
+        <div class="overlay">
+            <div class="container set-pad">
+                <div class="row text-center">
+                    <div class="col-lg-8 col-lg-offset-2 col-md-8 col-sm-8 col-md-offset-2 col-sm-offset-2">
+                        <h1 data-scroll-reveal="enter from the bottom after 0.1s" class="header-line" style="color: black">DeepCode工作室介绍</h1>
+                    </div>
+                </div>
+                <!--/.HEADER LINE END-->
+                <div class="row set-row-pad" data-scroll-reveal="enter from the bottom after 0.5s">
+                    <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 " style="text-indent: 25px; color: black; font-size: 15px;line-height:35px">
+                        <p>DeepCode工作室，依托广东工业大学应用数学学院实验中心，吸取广东工业大学计算机学院TopView工作室的创办经验及运行流程所创办的高技术水平在校工作室。工作室核心团队由广东工业大学应用数学学院及管理学院学生组成，并有计算机学院工作室成员及教授研究团队成员协助创办并参与。</p>
+							
+                        <p>DeepCode工作室致力于将前端开发、后端开发、移动开发、算法程序设计、机器学习、深度学习、数据分析、云计算、大数据、运维测试、数据库等融合打造一站式行业解决方案。为更多的开发者开源用于学习、研究的优质代码，提升开发能力与项目经验，在青葱岁月中伴随热情与汗水成长。</p>
+                        
+						<p>DeepCode工作室核心成员半数以上有超过5年的编程经验，硬件由应用数学学院实验中心支持：完备的网络设施、数据科学实验室，华为FusionInsight HD分布式数据处理系统，TipDM大数据分析平台，TipDM大数据建模平台，深度学习服务器......</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div style="background-color: #2d3d5a; color: #fff;font-size: 15px;background-attachment: fixed;">
+        <div class="container">
+            <div class="row set-row-pad" style="padding-bottom: 30px">
+                <div class="col-lg-6 col-md-6 col-sm-6   col-lg-offset-1 col-md-offset-1 col-sm-offset-1 " data-scroll-reveal="enter from the bottom after 0.4s">
+                    <h2><strong>联系方式</strong></h2>
+                    <hr />
+                    <div style="line-height: 30px">
+                        <h4><strong>地址:</strong> 广东工业大学龙洞校区 </h4>
+                        <h4><strong>商务合作: </strong>15521086635</h4>
+                        <h4><strong>Email: </strong>codestudiopen@gmail.com</h4>
+                    </div>
+                </div>
+				<!--
+                <div class="col-lg-4 col-md-4 col-sm-4   col-lg-offset-1 col-md-offset-1 col-sm-offset-1" data-scroll-reveal="enter from the bottom after 0.4s" style="vertical-align: bottom">
+                    <h2>
+                        <strong>扫我有惊喜 关注送系统</strong>
+                    </h2>
+                    <hr />
+                    <div>
+                        <a href="#"> <img width="100" height="100" src="Scripts/img/gongzhonghao.jpg"  alt="" style="border-radius: 5px" /> </a>
+                        <a href="#"> <img width="100" height="100" src="Scripts/img/qun.png"  alt="" style="margin-left: 10px;border-radius: 5px" /></a>
+                    </div>
+                </div>
+                <div class="col-lg-11 col-md-11 col-sm-11 col-lg-offset-1 col-md-offset-1 col-sm-offset-1" data-scroll-reveal="enter from the bottom after 0.4s" style="padding-top:15px">
+                    &copy 2019 www.qiansou.cn |北京千搜科技有限公司 Corporation  京ICP备14016321号
+                </div>
+				 <div style="width:300px;margin:0 auto; padding:20px 0;">
+						<a target="_blank" href="javascript:if(confirm('http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11010802029070  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ����һ������·���ⲿ������Ϊ������ʼ��ַ�ĵ�ַ��  \n\n�����ڷ������ϴ�����?'))window.location='http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11010802029070'"  style="display:inline-block;text-decoration:none;height:20px;line-height:20px;"><img src="" style="float:left;"/><p style="float:left;height:20px;line-height:20px;margin: 0px 0px 0px 5px; color:#939393;">京公网安备 11010802029070号</p></a>
+					  </div>
+            </div>
+        </div>
+    </div>
+	-->
+    <!-- FOOTER SECTION END-->
+    <!--  Jquery Core Script -->
+    <script src="Scripts/jquery-1.10.2.js" ></script>
+    <!--  Core Bootstrap Script -->
+    <script src="Scripts/bootstrap.js"></script>
+    <!--  Flexslider Scripts -->
+    <script src="Scripts/jquery.flexslider.js" ></script>
+    <!--  Scrolling Reveal Script -->
+    <script src="Scripts/scrollReveal.js"></script>
+    <!--  Scroll Scripts -->
+    <script src="Scripts/jquery.easing.min.js"></script>
+    <!--  Custom Scripts -->
+    <script src="Scripts/custom.js"></script>
+
+    <script src="Scripts/uploadImage.js"></script>
+
+    <script src="Scripts/jpeg_encoder_basic.js"></script>
+
+    <script src="Scripts/exif.js"></script>
+
+    <!--  Index Scripts -->
+    <script src="Scripts/qiansou.js"></script>
+    <script>
+        $(".nav > li > a").click(function () {
+            $('#collapse').addClass("collapsed");
+            $("#navbar").removeClass("in");
+            $("#navbar").addClass("collapse");
+        });
+
+        function OnProudetClick(name) {
+            switch (name) {
+                case "zaixianapi":
+                    self.location = "faceapi/faceapi.html"/*tpa=http://qiansou.cn/faceapi/faceapi.html*/;
+                    break;
+                case "lixiansdk":
+                    self.location = "home/facesdk.html"/*tpa=http://qiansou.cn/home/facesdk.html*/;
+                    break;
+                case "chanpinfuwu":
+                    self.location = "home/productinfo.html"/*tpa=http://qiansou.cn/home/productinfo.html*/;
+                    break;
+                case "dingzhihua":
+                    self.location = "home/facevip.html"/*tpa=http://qiansou.cn/home/facevip.html*/;
+                default:
+            }
+        }
+
+        var _hmt = _hmt || [];
+        (function () {
+            var hm = document.createElement("script");
+            hm.src = "../hm.baidu.com/hm.js-c1ae751a2a9976f7fd72ff9fe6d3c694"/*tpa=https://hm.baidu.com/hm.js?c1ae751a2a9976f7fd72ff9fe6d3c694*/;
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+</body>
+</html>

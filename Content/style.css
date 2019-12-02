@@ -1,0 +1,677 @@
+/* =============================================================
+   GENERAL STYLES
+ ============================================================ */
+body {
+    font-family: "Microsoft Yahei";
+    line-height: 30px;
+    font-size: 14px;
+}
+
+.set-pad {
+    padding-top: 35px;
+}
+
+/*测试部分控制*/
+.set-pad-test {
+    padding-bottom: 35px;
+}
+
+/****控制文本框*****/
+#myCarousel img, textarea {
+    width: 100%;
+    max-width: 350px;
+    max-height: 323.5px;
+    min-height: 323.5px;
+    cursor: pointer;
+}
+
+#myCarousel textarea {
+    width: 100%; /*自动适应父布局宽度*/
+    overflow: auto;
+    word-break: break-all;
+    background-color: #000000;
+    color: #00ff00;
+    height: 320px;
+}
+
+.set-row-pad {
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+/*=====================================
+  NAVBAR STYLES 
+    ===================================*/
+
+.logo-custom {
+    max-height: 40px;
+}
+
+#menu {
+    background-color: rgba(28, 43, 75, 1);
+    color: #fff;
+    font-size: 15px;
+    font-weight: 900;
+    letter-spacing: 1px;
+    min-height: 70px;
+}
+
+
+.navbar-inverse {
+    border-color: transparent;
+}
+
+    .navbar-inverse .navbar-nav > li > a, .navbar-inverse .navbar-nav > li > a:hover {
+        color: #FFF;
+        padding: 22px 10px;
+    }
+
+
+/*=====================================
+  HOME STYLES 
+    ===================================*/
+.home-sec {
+    padding-top: 10px;
+    padding-bottom: 60px;
+    /*background: url(../Scripts/img/bg.png) no-repeat center center;*/
+    padding: 0;
+    -webkit-background-size: cover;
+    background-size: cover;
+    color: #fff;
+    background-attachment: fixed;
+}
+
+    .home-sec .overlay {
+        background: rgba(38, 57, 88, 0.0);
+        /*min-height: 500px;*/
+    }
+
+    .home-sec h1 {
+        color: #fff;
+        font-weight: 900;
+        font-size: 50px;
+        text-transform: uppercase;
+        padding-bottom: 35px;
+    }
+
+    .home-sec h3 {
+        text-transform: uppercase;
+    }
+
+
+
+.set-flexi {
+    -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0);
+    -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0);
+    -o-box-shadow: 0 1px 4px rgba(0, 0, 0, 0);
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0);
+    background-color: transparent;
+    border: 0px solid #000;
+    padding-top: 120px;
+}
+
+.flex-control-nav {
+    display: none !important;
+}
+
+.set-flexi a {
+    margin: 5px;
+}
+
+.copyrights {
+    text-indent: -9999px;
+    height: 0;
+    line-height: 0;
+    font-size: 0;
+    overflow: hidden;
+}
+/*=====================================
+  TAG LINE STYLES 
+    ===================================*/
+
+.tag-line {
+    background: #E9E9E9;
+    color: #000;
+}
+
+    .tag-line h2 {
+        font-size: 20px;
+        font-weight: 900;
+        padding: 5px 10px 10px 5px;
+        color: #005E5A;
+    }
+
+        .tag-line h2 > i {
+            margin-left: 8px;
+            margin-right: 8px;
+        }
+/*=====================================
+  HEADER LINE STYLES 
+    ===================================*/
+.header-line {
+    font-weight: 900;
+    font-size: 25px;
+    padding-bottom: 5px;
+    padding-top: 25px;
+    color: #000;
+}
+
+h1::after {
+    content: " ";
+    border: solid 2px #2f9484;
+    display: block;
+    width: 200px;
+    margin: 12px auto;
+}
+
+/*=====================================
+  ABOUT STYLES 
+  ===================================*/
+.about-div {
+    padding: 30px 10px 30px 10px;
+}
+
+    .about-div a {
+        border-radius: 21px;
+        width: 180px;
+        min-width: 160px;
+        line-height: 30px;
+        font-size: 18px;
+        letter-spacing: 3px;
+        text-align: center;
+        margin: 0 auto 0 auto;
+        display: block;
+    }
+
+    .about-div span {
+        font-size: 18px;
+        font-weight: 800;
+    }
+
+.icon-round-border {
+    border: 1px #1A94C4;
+    color: transparent;
+    text-align: center;
+    padding-top: 15px;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; /*圆形*/
+    cursor: pointer;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+    background-size: cover;
+    margin: 0 auto 25px;
+    background-position: 50%;
+}
+
+    .icon-round-border:hover {
+        /*color: #fff;*/
+        border: 1px double #fff;
+        background-color: #31b0d5;
+        -webkit-transition: 0.3s;
+        -moz-transition: 0.3s;
+        -o-transition: 0.3s;
+        transition: 0.3s;
+    }
+
+.about-div hr {
+    border: 1px solid #1A94C4;
+}
+
+.about-div h3 {
+    font-size: 25px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.about-div p {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    min-height: 130px;
+}
+
+.btn-set {
+    border-radius: 0px;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    margin-bottom: 20px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+/*=====================================
+  FACULTY STYLES 
+  ===================================*/
+#faculty-sec {
+    color: #fff;
+    background: url("../Scripts/img/contact.jpg")/*tpa=http://qiansou.cn/Scripts/img/contact.jpg*/ no-repeat center center;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-color: #000;
+    background-attachment: fixed;
+}
+
+    #faculty-sec .overlay {
+        background: rgba(0, 0, 0, 0.76);
+        /*min-height: 600px;*/
+    }
+
+
+    #faculty-sec .form-control {
+        background-color: #000;
+        color: #fff;
+    }
+
+    #faculty-sec .header-line {
+        color: #fff;
+    }
+
+.faculty-div h4 {
+    line-height: 30px;
+    font-weight: 700;
+}
+
+.faculty-div {
+    padding: 30px;
+}
+
+    .faculty-div hr {
+        border: 1px solid #1A94C4;
+    }
+
+    .faculty-div h3 {
+        font-size: 25px;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+
+    .faculty-div p {
+        padding-top: 10px;
+        padding-bottom: 15px;
+    }
+
+    .faculty-div img {
+        border: 5px double #fff;
+        max-width: 350px;
+        max-height: 323.5px;
+        min-width: 350px;
+        -moz-border-radius: 15px;
+        -webkit-border-radius: 15px;
+        border-radius: 15px;
+    }
+
+/*=====================================
+  CONTACT STYLES 
+  ===================================*/
+#contact-sec {
+    padding-top: 10px;
+    padding-bottom: 60px;
+    padding: 0;
+    -webkit-background-size: cover;
+    background-size: cover;
+    color: #fff;
+    background-attachment: fixed;
+}
+
+    #contact-sec .overlay {
+        /*background: rgba(0, 0, 0, 0.76);*/
+        min-height: 600px;
+    }
+
+    #contact-sec h1 {
+        color: #fff;
+    }
+
+    #contact-sec .form-control {
+        /*background-color: rgba(255, 255, 255, 0);*/
+        color: #fff;
+        border: 5px double #fff;
+        border-radius: 0%; /*圆形*/
+    }
+
+
+
+/*=====================================
+  contact-sex STYLES 
+  ===================================*/
+#contact-sex {
+    padding-top: 10px;
+    padding-bottom: 60px;
+    padding: 0;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+
+    #contact-sex .overlay {
+        /*background: rgba(0, 0, 0, 0.76);*/
+        /*min-height: 600px;*/
+    }
+
+    #contact-sex h1 {
+        color: #2d3d5a;
+    }
+
+    #contact-sex .form-control {
+        border: 5px double #2d3d5a;
+        background-color: rgba(255, 255, 255, 0);
+        color: #fff;
+        -moz-border-radius: 15px;
+        -webkit-border-radius: 15px;
+        border-radius: 15px;
+    }
+
+    #contact-sex .contact-sex-img {
+        border: 5px double #2d3d5a;
+    }
+
+
+/*=====================================
+  contact-point STYLES 
+  ===================================*/
+#contact-point {
+    padding-top: 10px;
+    padding-bottom: 30px;
+    padding: 0;
+    -webkit-background-size: cover;
+    background-size: cover;
+    color: #fff;
+    background-attachment: fixed;
+}
+
+    #contact-point .overlay {
+        background: #000000;
+        filter: alpha(opacity=90);
+        -moz-opacity: 0.9;
+        opacity: 0.9;
+        /*min-height: 600px;*/
+    }
+
+    #contact-point h1 {
+        color: #fff;
+    }
+
+    #contact-point .form-control {
+        border: 5px double #ffffff;
+        background-color: rgba(255, 255, 255, 0);
+        color: #fff;
+
+           -moz-border-radius: 15px;
+        -webkit-border-radius: 15px;
+        border-radius: 15px;
+    }
+/*=====================================
+  Footer STYLES 
+  ===================================*/
+#footer {
+    padding: 5px 20px;
+    background-color: #2d3d5a;
+    text-align: center;
+    color: #fff;
+    font-size: 15px;
+}
+
+
+.anli div {
+    padding-bottom: 10px;
+}
+
+
+/************产品详情页面****************/
+
+
+.productInfo .title {
+    font-size: 30px;
+    font-weight: 900;
+    padding: 5px 10px 10px 5px;
+    color: #005E5A;
+}
+
+.description {
+    font-size: 16px;
+    padding: 5px 10px 10px 5px;
+    color: #000000;
+}
+
+.description_red {
+    font-size: 16px;
+    padding: 5px 10px 10px 5px;
+    color: red;
+}
+
+.productInfo-head {
+    background-size: cover;
+    background-color: #1c2b4c;
+    width: 100%;
+    padding-top: 70px;
+    margin: 0px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+
+.container-border {
+    border: 1px #d0d0d0 solid;
+    background: -webkit-linear-gradient(38deg, #f8f8f8, #ffffff);
+    background: -o-linear-gradient(38deg, #f8f8f8, #ffffff);
+    background: -moz-linear-gradient(38deg, #f8f8f8, #ffffff);
+    background: linear-gradient(38deg, #f8f8f8, #ffffff);
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+    margin-left: 3px;
+    margin-right: 3px;
+    -moz-border-radius: 15px;
+    -webkit-border-radius: 15px;
+    border-radius: 15px;
+}
+
+    .container-border img {
+        width: 440px;
+        height: 300px;
+        -moz-border-radius: 15px;
+        -webkit-border-radius: 15px;
+        border-radius: 15px;
+    }
+/******屏幕显示*******/
+
+
+/* 手机屏幕（大于等于 640px） */
+@media (max-width: 640px) {
+
+    .tag-line h2 {
+        font-size: 11px;
+    }
+
+    .home-sec h1 {
+        font-size: 30px;
+    }
+
+    .home-sec .overlay {
+        /*min-height: 580px;*/
+    }
+
+    .about-div p {
+        text-align: left;
+    }
+
+    .icon-round-border {
+        width: 125px;
+        height: 125px;
+    }
+
+    .faculty-div {
+        padding: 30px 0px 30px 0px;
+    }
+
+    /****控制文本框*****/
+    #myCarousel img, textarea {
+        width: 100%;
+        min-width: 165px;
+        max-height: 180px;
+        min-height: 180px;
+        cursor: pointer;
+    }
+
+    .faculty-div img {
+        width: 100%;
+        min-width: 165px;
+        max-height: 180px;
+        min-height: 180px;
+        cursor: pointer;
+        -moz-border-radius: 15px;
+        -webkit-border-radius: 15px;
+        border-radius: 15px;
+    }
+
+    .about-div {
+        padding: 10px 10px 10px 10px;
+    }
+
+    .icon-round-border {
+        background-position: center;
+        margin-top: 20px;
+    }
+
+    .productInfo-head img {
+        width: 100%;
+    }
+}
+
+#features-sec {
+    padding-bottom: 30px;
+}
+
+@media (max-width: 736px) {
+
+    .tag-line h2 {
+        font-size: 11px;
+    }
+
+    .home-sec h1 {
+        font-size: 30px;
+    }
+
+    .home-sec .overlay {
+        /*min-height: 580px;*/
+    }
+
+
+    /****控制文本框*****/
+    #myCarousel img, textarea {
+        width: 100%;
+        min-width: 165px;
+        max-height: 180px;
+        min-height: 180px;
+        cursor: pointer;
+    }
+
+    .faculty-div img {
+        width: 100%;
+        min-width: 165px;
+        max-height: 180px;
+        min-height: 180px;
+        cursor: pointer;
+    }
+
+    .productInfo-head img {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .productInfo-head img {
+        width: 100%;
+    }
+
+    .container-border img {
+        width: 340px;
+        height: 200px;
+    }
+}
+
+/* 手机屏幕（大桌面显示器，大于等于 320px） */
+@media (max-width: 320px) {
+
+    .about-div {
+        padding: 10px 0px 10px 0px;
+    }
+
+    .faculty-div {
+        padding: 30px 0px 0 0px;
+    }
+
+    /****控制文本框*****/
+    #myCarousel img, textarea {
+        width: 100%;
+        min-width: 132px;
+        max-height: 145px;
+        min-height: 145px;
+        cursor: pointer;
+    }
+
+    .faculty-div img {
+        width: 100%;
+        min-width: 132px;
+        max-height: 145px;
+        min-height: 145px;
+        cursor: pointer;
+    }
+
+    .icon-round-border {
+        width: 110px;
+        height: 110px;
+        background-position: center;
+        margin-top: 20px;
+    }
+}
+
+
+/* 大屏幕（大桌面显示器，大于等于 1200px） */
+@media (min-width: 1000px) {
+    .home-sec .overlay {
+        /*min-height: 680px;*/
+    }
+
+    .productInfo-head img {
+        width: 100%;
+    }
+}
+
+
+/* 大屏幕（大桌面显示器，大于等于 1200px） */
+@media (min-width: 1200px) {
+    .home-sec .overlay {
+        /*min-height: 750px;*/
+    }
+
+    .productInfo-head img {
+        width: 100%;
+    }
+}
+
+/* 大屏幕（大桌面显示器，大于等于 1200px） */
+@media (min-width: 1300px) {
+    .home-sec .overlay {
+        /*min-height: 680px;*/
+    }
+}
+
+/* 大屏幕（大桌面显示器，大于等于 1400px） */
+@media (min-width: 1440px) {
+    .home-sec .overlay {
+        /*min-height: 730px;*/
+    }
+}
+
+@media (min-width: 1600px) {
+    .home-sec .overlay {
+        /*min-height: 740px;*/
+    }
+}
+
+@media (min-width: 1900px) {
+    .home-sec .overlay {
+        /*min-height: 910px;*/
+    }
+}

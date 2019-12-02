@@ -1,0 +1,439 @@
+
+
+
+
+<!DOCTYPE html>
+
+<html>
+<head><meta http-equiv=Content-Type content='text/html; charset=utf-8'>
+
+    <link rel="shortcut icon" type="image/x-icon" href="../../Scripts/img/favicon.ico" media="screen" />
+    <meta name="viewport" content="width=device-width"/>
+    <meta name="keywords" content="人脸识别SDK,免费人脸识别,人脸识别开放源代码,最好的免费人脸识别服务,人脸防伪,人脸比对,免费的人脸识别SDK,人脸识别算法,人脸识别网站,人脸识别技术,脸部识别技术,人脸识别软件,人脸识别系统,人像识别,生物识别，公安人脸识别软件,火车站人脸识别系统,大规模照片搜索比对,人脸识别考勤机,人脸识别门禁机,人脸手持机,智能楼宇,标准化信息采集室人像采集识别,娱乐服务场所治安管理信息系统,公安系统">
+    <meta name="description" content="北京千搜科技有限公司是一家集科研，开发，生产，销售，服务为一体的专业化的身份识别解决方案提供商，专注于人脸识别和智能视频分析等核心尖端技术，是一家真正拥有核心自主研发算法的企业。公司目前具有业界领先的人脸识别技术的全套解决方案，其中人脸识别和人脸防伪已具备国际级水平。技术团体在人脸市场有着多年传统项目的运作经验，曾参与过多个重大生物特征识别方面的项目。基于现有的技术资源优势，公司开发了集成人脸检测，人脸分析（微笑，性别，年龄，表情，种族），人脸识别等核心算法的智能人脸云平台，依托该平台的基础服务，现已研发出基于人脸进行识别的身份认证登录系统。通过长期的人脸技术应用解决方案的探索，公司致力于开发互联网人脸产品的全新应用，意图打造更便捷更安全的账户登录生态系统和更加值得信赖的移动支付安全体验。">
+    <title>千搜人脸识别在线API服务</title>
+    <!-- BOOTSTRAP CORE STYLE CSS -->
+    <link href="../Content/bootstrap.css" tppabs="http://qiansou.cn/Content/bootstrap.css" rel="stylesheet"/>
+    <!-- FONT AWESOME CSS -->
+    <link href="../Content/font-awesome.min.css" tppabs="http://qiansou.cn/Content/font-awesome.min.css" rel="stylesheet"/>
+    <!-- FLEXSLIDER CSS -->
+    <link href="../Content/flexslider.css" tppabs="http://qiansou.cn/Content/flexslider.css" rel="stylesheet"/>
+    <!-- CUSTOM STYLE CSS -->
+    <link href="../Content/style.css" tppabs="http://qiansou.cn/Content/style.css" rel="stylesheet"/>
+
+    <link href="../Content/SidebarStyle.css" tppabs="http://qiansou.cn/Content/SidebarStyle.css" rel="stylesheet"/>
+
+    <style>
+        .webAPI_h1 {
+            font-family: anchorjs-icons;
+            font-style: normal;
+            font-variant: normal;
+            font-weight: normal;
+            line-height: inherit;
+            position: absolute;
+            margin-left: -1em;
+            padding-right: 0.5em;
+        }
+
+        .webAPI h3::after {
+            content: " ";
+            border: solid 0px #2f9484;
+            display: block;
+            width: 200px;
+            margin: 12px auto;
+        }
+
+        .webAPI img {
+            width: 100%;
+            height: 100%;
+            max-height: 650px;
+            max-width: 535px;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrapper" class="toggled">
+        <!-- Sidebar -->
+        <nav class="navbar navbar-inverse navbar-fixed-top hidden-sm hidden-xs" id="sidebar-wrapper" role="navigation">
+            <ul class="nav sidebar-nav">
+                <li class="sidebar-brand">
+                    <a href="../Home/Index.html" tppabs="http://qiansou.cn/Home/Index.html">
+                        千搜人脸识别在线API服务
+                    </a>
+                </li>
+                <li>
+                    <a href="#main"><i class="fa fa-fw fa-home"></i>在线API接入指南</a>
+                </li>
+                <li>
+                    <a href="#facedetect"><i class="fa fa-fw fa-terminal"></i> /api/facedetectv4</a>
+                </li>
+                <li>
+                    <a href="#facecompare"><i class="fa fa-fw fa-terminal"></i> /api/facecomparev4</a>
+                </li>
+                <li>
+                    <a href="#face2face"><i class="fa fa-fw fa-terminal"></i> /api/face2facev4</a>
+                </li>
+                <li>
+                    <a href="#url2url"><i class="fa fa-fw fa-terminal"></i> /api/url2urlv4</a>
+                </li>
+                <li>
+                    <a href="#shuoming"><i class="fa fa-fw fa-terminal"></i>用例及说明</a>
+                </li>
+                
+            </ul>
+        </nav>
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <div class="container" style="margin-left: 0px; width: 100%">
+                <div class="row" id="main">
+                    <div class="col-lg-8 col-lg-offset-2" data-scroll-reveal="nter from the bottom after 0.6s" style="text-align: center">
+                        <h1 class="page-header">欢迎接入千搜科技人脸识别在线API服务</h1>
+                        <center>AppId申请请发送申请到:service@qiansou.cn，邮件内请写明接入产品描述和联系方式。</center>
+                        <img src="../Scripts/img/api/api.png" tppabs="http://qiansou.cn/Scripts/img/api/api.png" />
+                    </div>
+                </div>
+
+                <div class="row" id="facedetect" data-scroll-reveal="nter from the bottom after 0.6s">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="bs-docs-section webAPI">
+                            <h3 id="type" class="page-header">
+                                一、人脸检测接口
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <table class="table table-bordered">
+                            <th>类别</th>
+                            <th>数据</th>
+                            <th>类型</th>
+                            <th>说明</th>
+                            <tbody>
+                                <tr>
+                                    <td>接口url</td>
+                                    <td>http://api.qiansou.cn/api/facedetectv4?appid=sdfsondfadfasdf1</td>
+                                    <td></td>
+                                    <td>appid注册后免费申请获得</td>
+                                </tr>
+                                <tr>
+                                    <td>HTTP请求方式</td>
+                                    <td colspan="3">Post</td>
+                                </tr>
+                                <tr>
+                                    <td>请求参数名</td>
+                                    <td>faceimage</td>
+                                    <td>string</td>
+                                    <td>图片base64编码字符串</td>
+                                </tr>
+                                <tr>
+                                    <td>请求JSON格式</td>
+                                    <td colspan="3">
+                                        <figure class="highlight">
+                                            <pre><code class="language-html" data-lang="html">{<br />  "faceimage":"/9j/4AAQSkZJRgABAQAAAQABAAD//gA8Q1JFQV"<br />}</code></pre>
+                                        </figure>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td rowspan="3">返回内容</td>
+                                    <td>facemodels</td>
+                                    <td>Json数组</td>
+                                    <td>人脸模型集合，参考返回json信息</td>
+                                </tr>
+                                <tr>
+                                    <td>result</td>
+                                    <td>bool</td>
+                                    <td>检测是否成功</td>
+                                </tr>
+                                <tr>
+                                    <td>errorinfo</td>
+                                    <td>string</td>
+                                    <td>错误提示或提示信息</td>
+                                </tr>
+                                <tr>
+                                    <td>返回JSON信息</td>
+                                    <td colspan="3">
+                                        <figure class="highlight">
+                                            <pre><code class="language-html" data-lang="html">{<br />"facemodels":<br />  [<br />   {"facerectanglex":683,"facerectangley":474,"facerectanglewidth":110,"facerectangleheight":110,<br>"lefteye":{"x":713,"y":517},"righteye":{"x":759,"y":517},"mouth":{"x":0,"y":0},"feature":"feature太长此处省略..."},<br />   {"facerectanglex":610,"facerectangley":75,"facerectanglewidth":222,"facerectangleheight":223,<br />"lefteye":{"x":680,"y":155},"righteye":{"x":767,"y":162},"mouth":{"x":0,"y":0},"feature":"feature太长此处省略..."}<br />  ],<br>"result":true,<br>"errorinfo":""<br />}</code></pre>
+                                        </figure>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>备注</td>
+                                    <td colspan="3">返回的lefteye、righteye、mouth为预留字段，使用的时候请忽略</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="row" id="facecompare" data-scroll-reveal="nter from the bottom after 0.6s">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="bs-docs-section webAPI">
+                            <h3 id="type" class="page-header">
+                                二、人脸特征值对比
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <table class="table table-bordered">
+                            <th>类别</th>
+                            <th>数据</th>
+                            <th>类型</th>
+                            <th>说明</th>
+                            <tbody>
+                                <tr>
+                                    <td>接口url</td>
+                                    <td>http://api.qiansou.cn/api/facecomparev4?appid=sdfsondfadfasdf1</td>
+                                    <td></td>
+                                    <td>appid注册后免费申请获得</td>
+                                </tr>
+                                <tr>
+                                    <td>HTTP请求方式</td>
+                                    <td colspan="3">Post</td>
+                                </tr>
+                                <tr>
+                                    <td rowspan="2">请求参数名</td>
+                                    <td>feature1</td>
+                                    <td>string</td>
+                                    <td>图片人脸特征值字符串</td>
+                                </tr>
+                                <tr>
+                                    <td>feature2</td>
+                                    <td>string</td>
+                                    <td>图片人脸特征值字符串</td>
+                                </tr>
+                                <tr>
+                                    <td>请求JSON例子</td>
+                                    <td colspan="3">
+                                        <figure class="highlight">
+                                            <pre><code class="language-html" data-lang="html">{<br>  "feature1":"/9j/4AAQSkZJRgABAQEAAAAAAAD/2wBDAAoHBwgHBgoICAgLCgoLD....",<br>  "feature2":"/9j/4AAQSkZJRgABAQEAAAAAAAD/2wBDAAoHBwgHBgoICAgLCgoLD..."<br>}</code></pre>
+                                        </figure>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td rowspan="3">返回内容</td>
+                                    <td>similar</td>
+                                    <td>float</td>
+                                    <td>相似度（0~1.0）</td>
+                                </tr>
+                                <tr>
+                                    <td>result</td>
+                                    <td>bool</td>
+                                    <td>比对是否成功</td>
+                                </tr>
+                                <tr>
+                                    <td>errorinfo</td>
+                                    <td>string</td>
+                                    <td>错误提示或提示信息</td>
+                                </tr>
+                                <tr>
+                                    <td>返回JSON信息</td>
+                                    <td colspan="3">
+                                        <figure class="highlight">
+                                            <pre><code class="language-html" data-lang="html">{"similar":0.436878175,"result":true,"errorinfo":""}</code></pre>
+                                        </figure>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>备注</td>
+                                    <td colspan="3"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="row" id="face2face" data-scroll-reveal="nter from the bottom after 0.6s">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="bs-docs-section webAPI">
+                            <h3 id="type" class="page-header">
+                                三、人像照片对比
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <table class="table table-bordered">
+                            <th>类别</th>
+                            <th>数据</th>
+                            <th>类型</th>
+                            <th>说明</th>
+                            <tbody>
+                                <tr>
+                                    <td>接口url</td>
+                                    <td>http://api.qiansou.cn/api/face2facev4?appid=sdfsondfadfasdf1</td>
+                                    <td></td>
+                                    <td>appid注册后免费申请获得</td>
+                                </tr>
+                            <tr>
+                                <td>HTTP请求方式</td>
+                                <td colspan="3">Post</td>
+                            </tr>
+
+                                <tr>
+                                    <td rowspan="2">请求参数名</td>
+                                    <td>faceimage1</td>
+                                    <td>string</td>
+                                    <td>图片base64编码字符串</td>
+                                </tr>
+                                <tr>
+                                    <td>faceimage2</td>
+                                    <td>string</td>
+                                    <td>图片base64编码字符串</td>
+                                </tr>
+                                <tr>
+                                    <td>请求JSON例子</td>
+                                    <td colspan="3">
+                                        <figure class="highlight">
+                                            <pre><code class="language-html" data-lang="html">{<br>  "faceimage1":"/9j/4AAQSkZJRgABAQEAAAAAAAD/2wBDAAoHBwgHBgoICAgLCgoLD....",<br>  "faceimage2":"/9j/4AAQSkZJRgABAQEAAAAAAAD/2wBDAAoHBwgHBgoICAgLCgoLD..."<br>}</code></pre>
+                                        </figure>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td rowspan="3">返回内容</td>
+                                    <td>similar</td>
+                                    <td>float</td>
+                                    <td>相似度（0~1.0）</td>
+                                </tr>
+                                <tr>
+                                    <td>result</td>
+                                    <td>bool</td>
+                                    <td>比对是否成功</td>
+                                </tr>
+                                <tr>
+                                    <td>errorinfo</td>
+                                    <td>string</td>
+                                    <td>错误提示或提示信息</td>
+                                </tr>
+                                <tr>
+
+                                    <td>返回JSON信息</td>
+                                    <td colspan="3">
+                                        <figure class="highlight">
+                                            <pre><code class="language-html" data-lang="html">{"similar":0.436878175,"result":true,"errorinfo":""}</code></pre>
+                                        </figure>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>备注</td>
+                                    <td colspan="3"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="row" id="url2url" data-scroll-reveal="nter from the bottom after 0.6s">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="bs-docs-section webAPI">
+                            <h3 id="type" class="page-header">
+                                四、人脸照片在线URL对比
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <table class="table table-bordered">
+                            <th>类别</th>
+                            <th>数据</th>
+                            <th>类型</th>
+                            <th>说明</th>
+                            <tbody>
+                                <tr>
+                                    <td>接口url</td>
+                                    <td>http://api.qiansou.cn/api/url2urlv4?appid=sdfsondfadfasdf1</td>
+                                    <td></td>
+                                    <td>appid注册后免费申请获得</td>
+                                </tr>
+                                <tr>
+                                    <td>HTTP请求方式</td>
+                                    <td colspan="3">Post</td>
+                                </tr>
+                                <tr>
+                                    <td rowspan="2">请求参数名</td>
+                                    <td>url1</td>
+                                    <td>string</td>
+                                    <td>图片在线url地址</td>
+                                </tr>
+                                <tr>
+                                    <td>url2</td>
+                                    <td>string</td>
+                                    <td>图片在线url地址</td>
+                                </tr>
+                                <tr>
+                                    <td>请求JSON例子</td>
+                                    <td colspan="3">
+                                        <figure class="highlight">
+                                            <pre><code class="language-html" data-lang="html">{<br>  "url1":"www.xxx.com/1.jpg",<br>  "url2":"www.xxx.com/1.jpg"<br>}</code></pre>
+                                        </figure>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td rowspan="3">返回内容</td>
+                                    <td>similar</td>
+                                    <td>float</td>
+                                    <td>相似度（0~1.0）</td>
+                                </tr>
+                                <tr>
+                                    <td>result</td>
+                                    <td>bool</td>
+                                    <td>比对是否成功</td>
+                                </tr>
+                                <tr>
+                                    <td>errorinfo</td>
+                                    <td>string</td>
+                                    <td>错误提示或提示信息</td>
+                                </tr>
+                                <tr>
+                                    <td>返回JSON信息</td>
+                                    <td colspan="3">
+                                        <figure class="highlight">
+                                            <pre><code class="language-html" data-lang="html">{"similar":0.436878175,"result":true,"errorinfo":""}</code></pre>
+                                        </figure>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>备注</td>
+                                    <td colspan="3"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="row" id="shuoming" data-scroll-reveal="nter from the bottom after 0.6s" style="padding-bottom:30px;">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="bs-docs-section webAPI">
+                            <h3 id="type" class="page-header">
+                                五、用例及说明
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <h4>
+                            不会调用API的同学们，可以到友商那里下载demo学习一下。用例那么多我们的攻城师就不再花时间写了，节约出我们宝贵的时间为您优化更佳的技术体验！！&( ^___^ )&
+                            <br /><br />技术支持QQ：2843028512 欢迎7*24小时骚扰！！！
+                        </h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--  Jquery Core Script -->
+    <script src="../Scripts/jquery-1.10.2.js" tppabs="http://qiansou.cn/Scripts/jquery-1.10.2.js"></script>
+    <!--  Core Bootstrap Script -->
+    <script src="../Scripts/bootstrap.js" tppabs="http://qiansou.cn/Scripts/bootstrap.js"></script>
+    <!--  Flexslider Scripts -->
+    <script src="../Scripts/jquery.flexslider.js" tppabs="http://qiansou.cn/Scripts/jquery.flexslider.js"></script>
+    <!--  Scrolling Reveal Script -->
+    <script src="../Scripts/scrollReveal.js" tppabs="http://qiansou.cn/Scripts/scrollReveal.js"></script>
+    <!--  Scroll Scripts -->
+    <script src="../Scripts/jquery.easing.min.js" tppabs="http://qiansou.cn/Scripts/jquery.easing.min.js"></script>
+    <!--  Custom Scripts -->
+    <script src="../Scripts/custom.js" tppabs="http://qiansou.cn/Scripts/custom.js"></script>
+
+    <script src="../Scripts/uploadImage.js" tppabs="http://qiansou.cn/Scripts/uploadImage.js"></script>
+
+    <script src="../Scripts/jpeg_encoder_basic.js" tppabs="http://qiansou.cn/Scripts/jpeg_encoder_basic.js"></script>
+
+    <script src="../Scripts/exif.js" tppabs="http://qiansou.cn/Scripts/exif.js"></script>
+</body>
+</html>
